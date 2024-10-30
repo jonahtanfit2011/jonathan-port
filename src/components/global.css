@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    background: linear-gradient(to right, #042b00, #030700);
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+    position: fixed;
+    background-color: #0e3000d2;
+    border-radius: 0 0 30px 30px;
+}
+.navbar p{
+    display: flex;
+    font-size: 2.3rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #959ea7;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+}
+.navbar li {
+    margin-left: 2rem;
+    font-weight: 600;
+}
+.navbar a {
+    font-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #959ea7;
+    transition: color 0.3s ease; 
+}
+.navbar a:hover {
+    color: #34b800; 
+}
+
+
+.heroBox {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.heroBox img {
+    border-radius: 50%;
+}
+.textHero h1{
+    font-size: 2rem;
+    color: #c7c7c7;
+}
+.textHero {
+    font-size: 1.5rem;
+    color: #c7c7c7;
+}
+
+section .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+    color: #c7c7c7;
+}
+.project-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #c7c7c7;
+    font-size: 1.3rem;
+}
+.project-box li{
+    list-style: none;
+}
+.project-box a {
+    text-decoration: none;
+    color: #34b800;
+    transition: color 0.3s ease;
+}
+.project-box a:hover {
+    color: #d9ff00;
+}
+.project-box ul{
+    max-width: 300px;
+}
+
+form {
+    width: 100%;
+    height: 100vh;
+    color: #c7c7c7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form label {
+    margin: 2rem;
+}
+form input {
+    width: 15rem;
+    height: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 100px;
+    border: 1px solid #34b800;
+    background: transparent;
+    color: #000000;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.message {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+.message textarea{
+    width: 400px;
+    height: 300px;
+    border: .5px solid #34b800;
+    background: transparent;
+    color: #000000;
+    padding: 1rem;
+    overflow: hidden-scroll;
+    border-radius: 30px;
+}
+button {
+    font-size: 1.3rem;
+    color: #ffffff;
+    width: 200px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #34b800;
+    background: linear-gradient(to right, #000000, #34b800);
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;;
+}
+button:hover {
+    color: #ff0000;
+}
+
+
+footer {
+    color: #ffffff;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left, #34b800, #101f00);
+    border-radius: 0 50px 0 0;
+}
+footer p {
+    margin: 10rem;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        max-width: 100vw;
+        overflow: hidden-scroll;
+    }
+    .navbar {
+        width: 100vw;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar ul {
+        margin-top: 1re;
+    }
+    .navbar li {
+        margin-left: 0;
+    }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .heroBox {
+        flex-direction: column;
+    }
+    .heroBox img {
+        padding-top: 5rem;
+        margin: 1rem;
+    }
+    .textHero {
+        text-align: center;
+        font-size: 20px;
+    }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .project {
+        margin-top: 5rem;
+    }
+    .project-box {
+        flex-direction: column;
+    }
+    .project-box ul {
+        max-width: 100%;
+    }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    form {
+        margin-top: 6rem;
+        padding: 1rem;
+    }
+    form input {
+        width: 70%;
+    }
+    .message {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .message textarea {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    footer {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    footer p {
+      margin: 0;
+    }
+  }
